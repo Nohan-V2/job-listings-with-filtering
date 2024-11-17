@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    font-family: "League Spartan", sans-serif;
 }
 
 :root {
@@ -43,42 +46,124 @@ main {
 .container {
     width: 80%;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
     border-radius: 4px;
     padding: 40px 32px;
-    border-left: 5px solid var(--accent-color);
     background-color: var(--container);
-    box-shadow: 0px 15px 20px -15px var(--shadow);
-}
+    box-shadow: 0px 15px 20px -5px var(--shadow);
 
-.image {
-    margin-right: 24px;
-}
+    &:nth-child(1),
+    &:nth-child(2) {
+        border-left: 5px solid var(--accent-color);
+    }
 
-.text-elements {
-    margin-right: auto;
-}
+    .image {
+        margin-right: 24px;
+        width: 88px;
+        height: 88px;
+        object-fit: cover;
+    }
 
-.donnees {
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
+    .text-elements {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
 
-.banners {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 16px;
-}
+        h2 {
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 24px;
+            letter-spacing: 0px;
+        }
+    }
 
-.banners li {
-    color: var(--accent-color);
-    background-color: var(--background-banners);
-    border-radius: 4px;
-    padding: 4px 8px;
+    .title-text {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        p {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: auto;
+            letter-spacing: 0px;
+            color: var(--accent-color);
+        }
+    }
+
+    .banners {
+        display: flex;
+        gap: 8px;
+
+        .new-banner {
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 14px;
+            letter-spacing: -0.11px;
+            padding: 8px 8px 4px 8px;
+            background-color: var(--accent-color);
+            border-radius: 12px;
+            text-align: center;
+            color: var(--body);
+        }
+
+        .featured-banner {
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 14px;
+            letter-spacing: -0.11px;
+            padding: 8px 8px 4px 8px;
+            background-color: var(--second-color);
+            border-radius: 12px;
+            text-align: center;
+            color: var(--body);
+        }
+    }
+
+    .info-text {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .donnees {
+        display: flex;
+        align-items: center;
+        gap: 19px;
+
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: -0.14px;
+            color: var(--données);
+        }
+
+        img {
+            width: 4px;
+            height: 4px;
+            object-fit: cover;
+        }
+    }
+
+    .category {
+        margin-left: auto;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+
+        li {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.12px;
+            color: var(--accent-color);
+            background-color: var(--background-banners);
+            border-radius: 4px;
+            padding: 4px 8px;
+        }
+    }
 }
