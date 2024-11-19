@@ -35,6 +35,8 @@ li {
     user-select: none;
 }
 
+
+
 .choose-category {
     border-radius: 4px;
     margin: 0px auto 40px auto;
@@ -44,8 +46,8 @@ li {
     max-width: 1100px;
     padding: 20px 40px;
     background-color: var(--container);
-    justify-content: space-between;
     margin-top: -36px;
+    gap: 16px;
     z-index: 99;
     box-shadow: 0px 15px 20px -5px var(--shadow);
 }
@@ -55,6 +57,10 @@ li {
     align-items: center;
     border-radius: 4px;
     overflow: hidden;
+}
+
+.none {
+    display: none;
 }
 
 .name-category {
@@ -79,6 +85,7 @@ li {
 }
 
 .bouton-clear {
+    margin-left: auto;
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
@@ -185,6 +192,7 @@ main {
         gap: 8px;
 
         h2 {
+            color: var(--second-color);
             font-weight: bold;
             font-size: 22px;
             line-height: 24px;
@@ -195,6 +203,10 @@ main {
             &:hover {
                 color: var(--accent-color);
             }
+        }
+
+        a {
+            text-decoration: none;
         }
     }
 
@@ -228,6 +240,7 @@ main {
         gap: 16px;
 
         li {
+            text-align: center;
             font-weight: bold;
             font-size: 16px;
             line-height: 24px;
